@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create a new rails app called example-dogs-api.
 
-Things you may want to cover:
+Use the Authentication guide to implement user signup and login actions. 
 
-* Ruby version
+Test each using requests.http (create at least 2 different users).
 
-* System dependencies
+Make a Dog model with attributes for name, age, and breed.
 
-* Configuration
+Implement a dogs create action. The dogs create action should only work if a user is logged in; if they are not, send a json message saying users must be logged in to create new dogs.
 
-* Database creation
+Bonus: Make a has_many / belongs_to relationship between users and dogs, and change the create action to save the user’s id with each dog.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonus part 2: Make update and destroy actions that only work if the current user is the owner of that dog.
